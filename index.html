@@ -8,7 +8,7 @@
 	<h1>Información del formulario</h1>
 
 	<php
-		if ($_SERVER['REQUEST_METHOD'] == 'GET') {
+		if ($_SERVER['REQUEST_METHOD'] == "GET") {
 	     		echo "Ingrese aqui"
 			$nombre = $_GET['nombre'] ?? '';
 			$email = $_GET['email'] ?? '';
@@ -34,7 +34,7 @@
 		<p><strong>Curriculum vitae:</strong> <?php echo $cv; ?></p>
 
 	<?php } else { ?>
-		echo "Ingrese aqui 2 dx"
+		echo "Ingrese aqui 2 dx2"
 
 		<p>No se han recibido datos del formulario</p>
 
