@@ -8,7 +8,7 @@
 	<h1>Información del formulario</h1>
 
 	<php
-		if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+		if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 	     		echo "Ingrese aqui"
 			$nombre = $_GET['nombre'] ?? '';
 			$email = $_GET['email'] ?? '';
