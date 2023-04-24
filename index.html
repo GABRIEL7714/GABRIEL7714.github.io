@@ -8,21 +8,19 @@
 	<h1>Información del formulario</h1>
 
 	<php
-		if ($_SERVER['REQUEST_METHOD'] == "GET") {
 	     		echo "Ingrese aqui"
-			$nombre = $_GET['nombre'] ?? 'WALTER GABRIEL';
-			$email = $_GET['email'] ?? 'gabriel123.valdivia@gmail.com';
-			$telefono = $_GET['telefono'] ?? '991869615';
-			$ingles = $_GET['ingles'] ?? 'AVANZADO';
+			$nombre = $_GET['nombre'] ?? '';
+			$email = $_GET['email'] ?? '';
+			$telefono = $_GET['telefono'] ?? '';
+			$ingles = $_GET['ingles'] ?? '';
 			$estudios = $_GET['estudios'] ?? '';
-			$experiencia = $_GET['experiencia'] ?? 'PROGRAMADOR WEB';
-			$habilidades = $_GET['habilidades'] ?? 'LIDERAZGO';
-			$disponibilidad = $_GET['disponibilidad'] ?? 'Tiempo Completo';
-			$remuneracion = $_GET['remuneracion'] ?? '10000';
+			$experiencia = $_GET['experiencia'] ?? '';
+			$habilidades = $_GET['habilidades'] ?? '';
+			$disponibilidad = $_GET['disponibilidad'] ?? '';
+			$remuneracion = $_GET['remuneracion'] ?? '';
 			$cv = $_GET['cv'] ?? '';
-		?>
 		
-		$nombre = "WALTER GABRIEL"
+		$nombre = "WALTER GABRIEL VALDIVIA"
 		<p><strong>Nombre:</strong> <?php echo $nombre; ?></p>
 		<p><strong>Correo electrónico:</strong> <?php echo $email; ?></p>
 		<p><strong>Teléfono:</strong> <?php echo $telefono; ?></p>
